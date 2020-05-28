@@ -1,0 +1,31 @@
+body{
+  margin: 0;
+
+}
+.titleHeader{
+  padding-left: 1rem;
+}
+.todoForm{
+  margin: 0 auto;
+  margin-top: 2rem;
+  width: 37.5rem;
+}
+.todo{
+  margin-bottom: 1rem;
+}
+.todo.completed span{
+  text-decoration: line-through;
+}
+.todo label{
+  margin: 0 auto;
+  width: 37.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 1rem;
+  background-color: rgb(236, 222, 222);
+}
+.todo i{
+  z-index: 2;
+}
