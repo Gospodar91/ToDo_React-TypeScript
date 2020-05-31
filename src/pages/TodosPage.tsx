@@ -24,15 +24,26 @@ export const TodoPage: React.FC = () => {
     setTodos((prev) => [newTodo, ...prev]);
   };
   const toggleHandler = (id: number) => {
-    setTodos((prev) =>
-      prev.map((todo) => {
-        if (todo.id === id) {
-          todo.completed = !todo.completed;
-          console.log("todo.completed", todo.completed);
-        }
-        return todo;
-      })
-    );
+    todos.map(elem=>{
+      if(elem.id===id){
+        console.log('elem.id', elem.id)
+        elem.completed=!elem.completed
+        setTodos(todos=>[...todos, ])
+      }
+// return elem
+    })
+    // setTodos(prev =>
+    //   prev.map(todo => {
+    //     if (todo.id === id) {
+    //       todo.completed = !todo.completed;
+    //       console.log("todo.completed", todo.completed);
+        
+        
+    //     }
+    //     return todo;
+      
+    //   })
+    // );
   };
   const removeHandler = (id: number) => {
     const shoulDel = confirm("Are you sure?");
